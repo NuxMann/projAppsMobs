@@ -84,3 +84,23 @@ class MyHello extends StatelessWidget{
     return MaterialApp(home: Scaffold(body: Center(child: Text(hello))),);
   }
 }
+
+/**
+ * TextStyle 
+ */
+
+class TextDasar extends StatelessWidget {
+  const TextDasar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text(
+      "My Nicname is Ry",
+      style: TextStyle(
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+        color: Color.fromARGB(255, 2, 76, 136),
+      ),
+    );
+  }
+}
