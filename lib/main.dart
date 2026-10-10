@@ -221,3 +221,34 @@ class DecorationAndShadow extends StatelessWidget {
     );
   }
 }
+
+// Text Alignment
+
+class TextAlignment extends StatelessWidget {
+  const TextAlignment({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'Ry Left',
+          textAlign: TextAlign.left,
+        ),
+        Text(
+          'Ry Center',
+          textAlign: TextAlign.center,
+        ),
+        Text(
+          'Ry Right',
+          textAlign: TextAlign.right,
+        ),
+        Text(
+          'Justify Ry',
+          textAlign: TextAlign.justify,
+        ),
+      ],
+    );
+  }
+  }
