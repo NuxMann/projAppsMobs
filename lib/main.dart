@@ -167,3 +167,57 @@ class Spacing extends StatelessWidget {
     );
   }
 }
+
+// Decoration And Shadow
+class DecorationAndShadow extends StatelessWidget {
+  const DecorationAndShadow({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "Nuxxmann Underline",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.w700,
+            color: Color.fromARGB(255, 203, 25, 1),
+            letterSpacing: 6,
+            decoration: TextDecoration.underline,
+            decorationColor: Color.fromARGB(255, 2, 76, 136),
+            decorationStyle: TextDecorationStyle.double,
+          ),
+        ),
+        SizedBox(height: 20),
+        Text(
+          "RyLineThrough",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.w700,
+            color: Color.fromARGB(255, 203, 25, 1),
+            letterSpacing: 6,
+            decoration: TextDecoration.lineThrough,
+          ),
+        ),
+        SizedBox(height: 20),
+        Text(
+          "Age 22",
+          style: TextStyle(
+            fontSize: 35,
+            fontStyle: FontStyle.italic,
+            color: Color.fromARGB(255, 2, 76, 136),
+            wordSpacing: 6,
+            shadows: [
+              Shadow(
+                color: Color.fromARGB(255, 203, 25, 1),
+                offset: Offset(4, 3),
+                blurRadius: 2,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
