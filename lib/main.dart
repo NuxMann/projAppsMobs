@@ -252,3 +252,26 @@ class TextAlignment extends StatelessWidget {
     );
   }
   }
+
+  // MaxLines dan Overflow
+
+  class MaxLinesAndOverflow extends StatelessWidget {
+  const MaxLinesAndOverflow({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        border: Border.all(),
+      ),
+      child: const Text(
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        maxLines: 3,
+        overflow: TextOverflow.clip,
+      ),
+    );
+
+  }
+  }
