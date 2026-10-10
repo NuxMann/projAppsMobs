@@ -95,12 +95,41 @@ class TextDasar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      "My Nicname is Ry",
+      "My Nickname is Ry",
       style: TextStyle(
         fontSize: 30,
         fontWeight: FontWeight.bold,
         color: Color.fromARGB(255, 2, 76, 136),
       ),
+    );
+  }
+}
+
+class fontTextMore extends StatelessWidget {
+  const fontTextMore({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "Nuxxmann",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.w700,
+            color: Color.fromARGB(255, 203, 25, 1),
+          ),
+        ),
+        Text(
+          "Age 22",
+          style: TextStyle(
+            fontSize: 35,
+            fontStyle: FontStyle.italic,
+            color: Color.fromARGB(255, 2, 76, 136),
+          ),
+        ),
+      ],
     );
   }
 }
