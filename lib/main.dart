@@ -275,3 +275,44 @@ class TextAlignment extends StatelessWidget {
 
   }
   }
+
+  // RichText dan TextSpan
+
+  class RichTextAndTextSpan extends StatelessWidget {
+  const RichTextAndTextSpan({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+     return RichText(
+      text: const TextSpan(
+        style: TextStyle(
+          fontSize: 20,
+          color: Colors.black,
+        ),
+        children: [
+          TextSpan(
+            text: 'Yoo ndak tau, tanya ko tanya saya ',
+          ),
+          TextSpan(
+            text: 'Kagettt',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.red,
+            ),
+          ),
+          TextSpan(
+            text: ' dan ',
+          ),
+          TextSpan(
+            text: 'Saya akan kembali ke solo',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.yellow,
+            ),
+          ),
+        ],
+      ),
+    );
+
+  }
+  }
