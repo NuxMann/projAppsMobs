@@ -316,3 +316,29 @@ class TextAlignment extends StatelessWidget {
 
   }
   }
+
+  // Text Scaler
+  class TextScalerBuild extends StatelessWidget {
+  const TextScalerBuild({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          'Hello, World!',
+          style: TextStyle(fontSize: 20),
+        ),
+
+        SizedBox(height: 20),
+
+        Text(
+          'TEXT UKURANNN BIGG DAN JUMBOOO',
+          textScaler: TextScaler.linear(2.0),
+          style: TextStyle(fontSize: 20),
+        ),
+      ],
+    );
+  }
+  }
