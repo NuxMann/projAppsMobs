@@ -133,3 +133,37 @@ class fontTextMore extends StatelessWidget {
     );
   }
 }
+
+// Spacing
+
+class Spacing extends StatelessWidget {
+  const Spacing({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "Nuxxmann",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.w700,
+            color: Color.fromARGB(255, 203, 25, 1),
+            letterSpacing: 6,
+          ),
+        ),
+        SizedBox(height: 20),
+        Text(
+          "Age 22",
+          style: TextStyle(
+            fontSize: 35,
+            fontStyle: FontStyle.italic,
+            color: Color.fromARGB(255, 2, 76, 136),
+            wordSpacing: 6,
+          ),
+        ),
+      ],
+    );
+  }
+}
